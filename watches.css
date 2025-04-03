@@ -1,0 +1,657 @@
+/* Watches Page Specific Styles */
+
+/* Hero Section */
+.hero-section {
+    height: 79vh;
+    min-height: 550px;
+    background-color: var(--black);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+ 
+  .watch-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-height: 600px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .watch-info {
+    position: absolute;
+    bottom: auto;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--white);
+    padding: 12px 20px;
+    width: auto;
+    max-width: 40%;
+    z-index: 2;
+    text-align: left;
+    background: transparent;
+    border-radius: 4px;
+  }
+  
+  .hero-content {
+    max-width: 1200px;
+    padding: 0 20px;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .hero-subtitle {
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  
+  .hero-title {
+    font-size: 54px;
+    font-weight: 300;
+    letter-spacing: 1px;
+  }
+  
+  /* Collection Intro */
+  .collection-intro {
+    padding: 60px 0;
+    background-color: var(--white);
+  }
+  
+  .collection-container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .intro-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 0 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .intro-heading h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--primary-color);
+  }
+  
+  .intro-text p {
+    font-size: 16px;
+    margin-bottom: 24px;
+    max-width: 600px;
+  }
+  
+  /* Watch Categories */
+  .watch-categories {
+    background-color: var(--white);
+  }
+  
+  .categories-container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+ 
+  
+  .category-tabs::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
+  
+  
+  .watches-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0 0 px;
+  }
+  
+  .watch-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .watch-image {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .watch-image video {
+    transition: transform 0.5s ease;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .watch-card:hover .watch-image video {
+    transform: scale(1.05);
+  }
+  
+  .watch-info h3 {
+    font-size: 48px;
+    font-weight: 300;
+    margin-bottom: 16px;
+    text-transform: none;
+  }
+  
+  .watch-info p {
+    color: var(--white);
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Add a discover more link to match the reference */
+  .watch-info .discover-more {
+    display: inline-flex;
+    align-items: center;
+    color: var(--white);
+    font-weight: 500;
+    transition: var(--transition);
+    font-size: 16px;
+  }
+  
+  .watch-info .discover-more i {
+    margin-left: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .watch-info .discover-more:hover i {
+    transform: translateX(5px);
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.content {
+    min-height: 50vh;
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Breadcrumb Styles */
+.breadcrumb-container {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #e0e0e0;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.breadcrumb {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.breadcrumb a {
+    color: #666;
+}
+
+.share-links {
+    margin-top:30px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.share-icon {
+    color: #666;
+    font-size: 1rem;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #fff;
+    padding: 3rem 2rem 2rem;
+    border-top: 1px solid #e0e0e0;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.footer-column h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #212121;
+}
+
+.footer-column .second-heading {
+    margin-top: 2rem;
+}
+
+.footer-column ul {
+    margin-bottom: 1.5rem;
+}
+
+.footer-column ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-column ul li a {
+    color: #666;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #212121;
+}
+
+.logo-column {
+    grid-column: 1;
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo img {
+    width: 40px;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+
+.logo-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #006039;
+}
+
+.social-links li a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.social-links li a i {
+    width: 20px;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+    margin-top: 2rem;
+    border-top: 1px solid #e0e0e0;
+    max-width: 1400px;
+    margin: 2rem auto 0;
+}
+
+.language-selector {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #666;
+    cursor: pointer;
+}
+
+.accessibility-toggles {
+    display: flex;
+    gap: 2rem;
+}
+
+.toggle {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #666;
+}
+
+/* Toggle Switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #006039;
+}
+
+input:checked + .slider:before {
+    transform: translateX(20px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* Banner Section */
+.banner {
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 6rem 2rem;
+    position: relative;
+    height:40vh;
+    width: 100%;
+}
+.banner-img{
+  z-index:-10;
+  height: 100%;
+  width: 100%;
+}
+
+
+.banner-content {
+    position: relative;
+    z-index: 1;
+}
+
+.banner h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 300;
+}
+
+.banner-link {
+    color: white;
+    border-bottom: 1px solid white;
+    padding-bottom: 0.2rem;
+    font-size: 1rem;
+    transition: opacity 0.3s;
+}
+
+.banner-link:hover {
+    opacity: 0.8;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .footer-container {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+}
+
+@media (max-width: 992px) {
+    .footer-container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .breadcrumb-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .logo-column {
+        grid-column: 1 / -1;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: flex-start;
+    }
+    
+    .banner h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .accessibility-toggles {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .banner h2 {
+        font-size: 1.5rem;
+    }
+}
+  /* Video Container */
+  .video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Staggered Animation Delay */
+  [data-delay="100"] {
+    transition-delay: 0.1s;
+  }
+  
+  [data-delay="200"] {
+    transition-delay: 0.2s;
+  }
+  
+  /* Scroll to Top Button */
+  .scroll-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    z-index: 99;
+    opacity: 0.8;
+    transition: opacity 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .scroll-to-top:hover {
+    opacity: 1;
+    background-color: var(--primary-dark);
+  }
+  
+  /* Reveal on Scroll Animation */
+  .reveal-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  
+  .reveal-on-scroll.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Media Queries */
+  @media (min-width: 576px) {
+    .hero-title {
+      font-size: 64px;
+    }
+  
+    .watch-info h3 {
+      font-size: 24px;
+    }
+  
+    .intro-heading h2 {
+      font-size: 36px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .intro-grid {
+      grid-template-columns: 1fr 1fr;
+      padding: 0 40px;
+    }
+  
+    .features-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .category-tabs {
+      justify-content: center;
+      overflow-x: visible;
+    }
+  
+    .category-tab {
+      padding: 12px 24px;
+      font-size: 16px;
+      margin-right: 20px;
+    }
+  
+    .hero-content {
+      padding: 0 40px;
+    }
+  
+    .watches-grid {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .hero-title {
+      font-size: 84px;
+    }
+  
+    .features-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    .watches-grid {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .watches-grid {
+      padding: 0 20px 40px;
+    }
+  }
+  
+  /* Specific adjustments for mobile */
+  @media (max-width: 767px) {
+    .watches-grid {
+      padding: 0 10px 30px;
+    }
+  
+    .watch-card {
+      min-height: 400px;
+      height: 70vh;
+    }
+  
+    .hero-section {
+      min-height: 450px;
+    }
+  
+    .collection-intro {
+      padding: 40px 0;
+    }
+  
+    .features-section {
+      padding: 40px 0;
+    }
+  
+    .scroll-to-top {
+      width: 40px;
+      height: 40px;
+      bottom: 20px;
+      right: 20px;
+    }
+  
+    .watch-info {
+      left: 5%;
+      max-width: 70%;
+    }
+  
+    .watch-info h3 {
+      font-size: 36px;
+    }
+  
+    .watch-info p {
+      font-size: 18px;
+    }
+  }
+  
+  
