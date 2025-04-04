@@ -284,7 +284,13 @@ button {
   margin-top: 30px;
   padding-left: 10px;
 }
-
+.img-div{
+  display: flex;
+  position: fixed;
+  bottom: 0px;
+  height: 300px;
+  overflow-x: auto;
+}
 .menu-column ul li {
   margin-bottom: 16px;
 }
@@ -514,7 +520,9 @@ button {
   .menu-btn span {
     display: none;
   }
-
+  .img-div{
+    display: none;
+   }
   .logo svg {
     height: 35px;
   }
